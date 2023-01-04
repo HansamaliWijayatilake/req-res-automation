@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestSuite" thread-count="2" parallel="tests">
+
+    <test name="ChromeTest">
+        <classes>
+            <class name="apiTask.ApiAutomation">
+            </class>
+            <class name="apiTask.UIAutomation"></class>
+        </classes>
+    </test>
+
+<!--NOTE: Commented since only available browser is chrome-->
+
+<!--    <test name="FirefoxTest">-->
+<!--        <parameter name="browser" value="Firefox"/>-->
+<!--        <classes>-->
+<!--            <class name="scripts.ExecutionScript">-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="EdgeTest">-->
+<!--        <parameter name="browser" value="Edge"/>-->
+<!--        <classes>-->
+<!--            <class name="scripts.ExecutionScript">-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+</suite>
